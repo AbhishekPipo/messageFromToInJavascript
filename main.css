@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(#b8dafc,white);
+    overflow: hidden;
+}
+button{
+    width: fit-content;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: whitesmoke;
+
+}
+
+button:hover{
+background: rgba(0,0,0,0.5);
+}
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message{
+    border:1px solid lightgray;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 500px; /* message container was small so increased width */
+    height: auto; /* if user enters long message make height as 'auto' */
+    margin: auto;    /* to place our container in the center */
+
+    padding: 0 20px; /* padding inside containet */
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5); /*show makes container or box more enhanced look */
+    
+}
+.message input{
+    /* to make input box aligned with envolope icon */
+    width: 90%; /* width of the input message or box in increased */
+    padding: 8px 0;
+    border-radius: 5px;
+    border: lightgray;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media(max-width: 480px){
+    .message input{
+        width: 83%;
+    }
+}
